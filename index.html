@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Smooch+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Space Battle</title>
+</head>
+<body>
+    <h1>Battle of New York</h1>
+    <div class="beginning-page">
+        <h3>Avenger Group Chat</h3>
+        <p><span>Nick Fury</span><br>Listen up avengers! New York is being attacked by a hordes of aliens! You and the other Avengers are on a mission to destroy every last alien ship. Battle the Loki's aliens as you try to destroy them with your lasers. The aliens' weakness is that they are too logical and attack one at a time: they will wait to see the outcome of a battle before deploying another alien ship. Your strength is that you have the initiative and get to attack first. After you have destroyed a ship, you have the option to make a hasty retreat.</p>
+        <p><span>Nick Fury</span><br>If the Avenger's ship hull reaches zero, New York will be taken over. Below, in the "Avenger Stats" category is the starting hull, firepower, and accuracy of your team: </p>
+        <h3>To begin the mission, click the next button.</h3>
+        <button class="first-btn">Next</button>
+    </div>
+    <div class="user-stats">
+        <h2>Avenger Ship Stats </h2>
+        <p id="beginning-stats"></p>
+    </div>
+    <div class="attack-page">
+        <p>Here are all of the alien ships attacking New York: </p>
+        <div id="num-of-aliens"></div>
+        <p>Avenger's turn to attack. Type the number of the alien ship the Avengers will attack first: </p>
+        <form>
+            <label for="alien">Alien Ship #:</label>
+            <input type="text" id="alien-ship-num" name="alien-ship-num">
+            <input type="submit" class="submit">
+        </form>
+    </div>
+    <div class="retreat-page">
+        <p>Would you like to retreat? Enter [yes] or [no]</p>
+        <input type="text" id="retreat" name="retreat">
+        <input type="submit" class="submit-retreat">
+    </div>
+    <div class="computer-turn-page">
+        <h3>Computer's Turn: </h3>
+    </div>
+    <div class="user-loses-page"></div>
+    <div class="user-wins-page"></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

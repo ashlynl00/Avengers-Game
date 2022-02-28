@@ -1,0 +1,98 @@
+.attack-page {
+    display: none;
+}
+.retreat-page {
+    display: none;
+}
+
+.computer-turn-page {
+    display: none;
+}
+
+.user-loses-page {
+    display: none;
+}
+
+.user-wins-page {
+    display: none;
+}
+
+li:hover {
+    background-color: red;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-image: url(./battle-of-newyork-img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 2px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Smooch Sans', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+/* style starting page */
+.beginning-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 400px;
+    margin: 20px;
+    background-color: rgb(197, 48, 48);
+    border-radius: 75px;
+}
+
+.beginning-page h3 {
+    text-align: center;
+    margin: 10px;
+}
+
+.beginning-page p {
+    background-color: rgb(39, 39, 207);
+    margin: 10px 50px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-btn {
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.first-btn:hover {
+    background-color: darkgrey;
+}
+
+/* style stats */
+.user-stats {
+    text-align: center;
+    color: white;
+}
+
+/* style attack page */
+.attack-page, .retreat-page, .computer-turn-page {
+    text-align: center;
+    background-color: rgb(177, 171, 171);
+    margin: 50px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+
+
+
+
+
